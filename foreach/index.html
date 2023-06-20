@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>O metodo forEach()</h2>
+
+    <p>forEach() chama uma função pra cada item de uma array:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = "";
+
+
+        const fruits = [window.prompt('Insira a fruta 1'), window.prompt('Insira a fruta 2'), window.prompt('Insira a fruta 3')]
+        fruits.forEach(myFunction);
+
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(item, index) {
+            text += index + ": " + item + "<br>";
+        }
+    </script>
+
+</body>
+
+</html>

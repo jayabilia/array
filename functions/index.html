@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Funções Javascript</h1>
+
+    <p>chama uma função que calcula e retorna um resultado:</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        let x = multiplicador(window.prompt('Insira o valor de A'), window.prompt('Insira o valor de B')); //let x = multiplicador(4, 3)
+        document.getElementById("demo").innerHTML = x;
+
+        function multiplicador(a, b) {
+            return a * b;
+        }
+
+    </script>
+
+</body>
+
+</html>

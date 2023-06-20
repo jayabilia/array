@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        // Create an object:
+        const person = { firstName: window.prompt('Insira o nome'), lastName: window.prompt('Insira o sobrenome'), age: window.prompt('Insira a idade'), eyeColor: window.prompt('Insira a cor dos olhos') };
+
+        // Display some data from the object:
+        document.getElementById("demo").innerHTML =
+            person.firstName + " tem " + person.age + " anos de idade.";
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Função</title>
+</head>
+
+<body>
+    <h1>Calculadora de segundo grau</h1>
+
+
+    <script>
+        let a = parseInt(window.prompt("Insira o valor de A"))
+        let b = parseInt(window.prompt("Insira o valor de B"))
+        let c = parseInt(window.prompt("Insira o valor de C"))
+        let raizes = {};
+
+        function getDelta(a, b, c) {
+            return b ** 2 - (4 * a * c)
+            
+        }
+
+        function getBhaskara(delta, aa, bb, cc) {
+            if(delta <0){
+                window.alert("Delta é negativo.")
+                return
+            }
+            const x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            const x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            return {
+                x1: x1,
+                x2: x2
+            }
+        }
+
+        let delta = getDelta(a, b, c)
+        let bhaskara = getBhaskara(delta, a, b, c)
+        window.alert(`X1: ${bhaskara.x1}\nX2: ${bhaskara.x2}`)
+
+    </script>
+</body>
+
+</html>

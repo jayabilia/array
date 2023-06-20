@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>O metodo filter()</h2>
+
+    <p>Pega todos os valores uma array que tenham um valor de 18 ou mais:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const ages = [window.prompt('Insira a idade 1'), window.prompt('Insira a idade 2'), window.prompt('Insira a idade 3'), window.prompt('Insira a idade 4')];
+
+        document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+    </script>
+
+</body>
+
+</html>

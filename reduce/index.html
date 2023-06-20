@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript reduce()</h2>
+
+    <p>subtrai os numeros numa array, começando da esquerda:</p>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const numbers = [window.prompt('Insira o valor 1'), window.prompt('Insira o valor 2'), window.prompt('Insira o valor 3')];
+        document.getElementById("demo").innerHTML = numbers.reduce(myFunc);
+
+        function myFunc(total, num) {
+            return total - num;
+        }
+
+    </script>
+
+</body>
+
+</html>
